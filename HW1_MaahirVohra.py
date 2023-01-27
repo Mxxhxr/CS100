@@ -51,7 +51,14 @@ To convert kilometers to miles. You do (kilometers / 1.61)
 In this case it would be (10 / 1.61) = 6.21 miles
 
 #3
-
+distance = 6.21 miles
+time = 2562 seconds
+averagePace = time / distance = 415.86 seconds/mile   
+In time per mile in min and sec: averagePace / 60 = 6 minutes and 55 seconds per mile
+Average speed in mph:
+secondsInAnHour = 3600
+newTime = time / secondsInAnHour = .711
+AverageSpeed = distance / newTime = 8.73 mph
 '''
 
 #2.1
