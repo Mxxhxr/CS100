@@ -1,6 +1,6 @@
 #Maahir Vohra
 #CS100 Section 008
-#HW 02, February 6, 2023
+#HW 03, February 6, 2023
 
 
 import turtle
