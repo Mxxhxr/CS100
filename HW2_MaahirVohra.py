@@ -3,7 +3,7 @@
 #HW 02, February 1, 2023
 
 #1
-grades = ['A', 'B', 'C', 'D', 'F', 'B', 'A', 'C', 'B', 'A' ]
+grades = ['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A' ]
 
 frequency = [grades.count('A'),grades.count('B'),grades.count('C'),grades.count('D'),grades.count('F')]
 print(frequency)
