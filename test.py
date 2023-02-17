@@ -1,6 +1,10 @@
-report = "large bonus"
+start = 1
+stop = 10
+step = 1
 
-if "large bonus" in report:
-    print("vacation time")
-else:
-    print("no 'large bonus' found in string")
+
+for num in range(start, stop, step):
+    if num != stop - stop:
+        print(num, end=",")
+    else:
+        print(num)
