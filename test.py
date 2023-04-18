@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+
 outfile = open('example.txt', 'w')
-=======
+
+
 def print_board(board):
     print("   |   |")
     print(" " + board[0] + " | " + board[1] + " | " + board[2])
@@ -11,23 +12,24 @@ def print_board(board):
     print("   |   |")
     print(" " + board[6] + " | " + board[7] + " | " + board[8])
     print("   |   |")
->>>>>>> 4cc09939441788ad1cfd192cfba440d9216bcc64
+
 
 outfile.write('T')
 
-<<<<<<< HEAD
 outfile.write('his is the first line.')
 
 outfile.write(' Still the first line...\n')
 
 outfile.write('Now we are in the second line.\n')
 
-outfile.write('Non string value like ' + str(5) + ' must be converted first.\n')
+outfile.write('Non string value like ' + str(5) +
+              ' must be converted first.\n')
 
 outfile.write('Non string value like {} must be converted first.\n'.format(5))
 
 outfile.close()
-=======
+
+
 def check_win(board, player):
     if (board[0] == player and board[1] == player and board[2] == player) or \
        (board[3] == player and board[4] == player and board[5] == player) or \
@@ -67,4 +69,3 @@ def play_game():
 
 
 play_game()
->>>>>>> 4cc09939441788ad1cfd192cfba440d9216bcc64

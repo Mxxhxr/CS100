@@ -1,2 +1,0 @@
-def twoWords(length, firstLetter):
-    
