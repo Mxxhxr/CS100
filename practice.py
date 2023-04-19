@@ -1,9 +1,6 @@
-def f(b):
-    return a*b 
-    a = 0 
+import dog
 
-print('f(3) = ', f(3))
-print('a = ', a)
+sugar = dog.Dog('Sugar', 'Bored Collie')
 
-# f(3) = 0
-# a = error?
+print(sugar.name)
+print(sugar.breed)
