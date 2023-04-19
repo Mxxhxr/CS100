@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 outfile = open('example.txt', 'w')
 
@@ -13,9 +14,14 @@ def print_board(board):
     print(" " + board[6] + " | " + board[7] + " | " + board[8])
     print("   |   |")
 
+=======
+wordOccurrences = [('rabbbit',1),('Alice',1),('rabbbit',4),('Alice',7),('Alice',10)]
+>>>>>>> 6f71d35894b6e8826f5b971ea584cc5f6c9e0c28
 
-outfile.write('T')
+def makeIndex(wordPageList):
+    wordIndex = {}
 
+<<<<<<< HEAD
 outfile.write('his is the first line.')
 
 outfile.write(' Still the first line...\n')
@@ -64,8 +70,22 @@ def play_game():
             break
         if player == "X":
             player = "O"
+=======
+    for item in wordPageList:
+        word = item[0]
+        page = item[1]
+        if word not in wordIndex:
+            wordIndex[word] = [page]
+>>>>>>> 6f71d35894b6e8826f5b971ea584cc5f6c9e0c28
         else:
-            player = "X"
+            wordIndex[word].append(page)
+    return wordIndex
 
+aliceIndex = makeIndex(wordOccurrences)
 
+print(aliceIndex)
+
+<<<<<<< HEAD
 play_game()
+=======
+>>>>>>> 6f71d35894b6e8826f5b971ea584cc5f6c9e0c28
