@@ -1,5 +1,9 @@
-def iSquaredPlus10(x):
-    result = x**2 + 10
-    return result
+def f(b):
+    return a*b 
+    a = 0 
 
-    print(iSquaredPlus10(2))
+print('f(3) = ', f(3))
+print('a = ', a)
+
+# f(3) = 0
+# a = error?
