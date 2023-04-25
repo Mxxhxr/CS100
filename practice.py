@@ -1,12 +1,20 @@
-import dog
+def readAge(filename):
+    strAge = None
+    while True:
+        try:
+            if strAge == None:
+                infile = open(filename)
+                strAge = infile.readline()
+            age = int(strAge)
+            print('Next year you will be', age+1)
+            break
+        except ValueError:
+            print('Value cannot be converted to integer.')
+            strAge = input("Enter your age in digits: ")
+        except FileNotFoundError:
+            print('Input file is missing:', "'" + filename + "'")
+            filename = input("Enter a correct file name: ")
 
-sugar = dog.Dog('Sugar', 'Bored Collie')
 
-print(sugar.name)
-print(sugar.breed)
-sugar.teach('Frisbee')
-#print(sugar.tricks)
-sugar.knows('Frisbee')
-
-print(dog.Dog.speicies)
-print(sugar.speicies)
+readAge('inputfile.txt')
+#fix the above code so that it doesn't merely output an error message

@@ -1,11 +1,11 @@
 # Maahir Vohra
 # CS100 Section 008
-# HW 11, April 19, 2023
+# HW 11, April 20, 2023
 
 class Dog:
-    ''' Class that gives each dog its own attributes.'''
+    ''' Class that gives a dog its own attributes.'''
 
-    speicies = "Canis familiaris"
+    species = "Canis familiaris"
     def __init__(self, name, breed):
         self.name = name
         self.breed = breed
