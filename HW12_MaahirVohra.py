@@ -40,7 +40,7 @@ def averageSpeed():
         print("File not found. Yet another human error. Goodbye.")
         return
 
-# strip and split each speed and append to speedList if it passes safeFloat()
+    # strip and split each speed and append to speedList if it passes safeFloat()
     speedList = []
     try:
         for line in oFile:
@@ -53,9 +53,6 @@ def averageSpeed():
         pass
     oFile.close()
 
-# calculate the average speed
+    # calculate the average speed and print it out
     average = sum(speedList) / len(speedList)
     print("Average speed is", average, "miles per hour.")
-
-
-averageSpeed()
